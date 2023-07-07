@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+    font-family:'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-image: url(/Paradise/images/tropical_water.jpg);
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: local;
+    overflow-x: hidden;
+    
+}
+
+header{
+    position: relative;
+    height: 10%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, black, rgba(0, 0, 0, 0));
+    
+}
+
+header a{
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(214, 158, 53);
+    text-decoration: none;
+}
+
+    
+.navigator{
+    display: flex;
+    align-items: center;
+}    
+
+.navigator a{
+    padding-inline: 25px;
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    text-transform: 0.3s;
+}
+
+.navigator a:hover:not(:last-child){
+    color: rgb(214, 158, 53);
+    transform: scale(1.2);
+}
+
+.login_nav{
+    border: 1px solid black;
+    box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.8);
+    margin-left: 25px;
+    padding: 15px 35px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: rgb(252, 203, 114);
+    cursor: pointer;
+    transform: 0.3s;
+    position: relative;
+    overflow: hidden;
+    transition: 0.1s;
+}
+
+.login_nav:hover{
+    transform: scale(1.2);
+}
+
+  
+.login_nav::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, transparent, rgba(0, 255, 255, 0.6));
+    background-size: cover;
+    transition: left 0.3s;
+    z-index: -1;
+  }
+  
+.login_nav:hover::before {
+    left: 0;
+  }
+  
+
+.login_nav span{
+    font-weight: 800;
+}
+
+/*padrão das páginas acima*/
+
+main{
+    height: 90%;
+    
+
+}
+
+.seclog1{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_login{
+    height: 60%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background: linear-gradient(to top left, rgba(0, 255, 255, 0.5), rgba(252, 203, 114, 0.5));
+    backdrop-filter: blur(5px);
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8);
+    border-radius: 25px;
+    border: 2px solid black;
+
+}
+
+.card_login h1{
+    font-size: 50px;
+    margin: 35px;
+    letter-spacing: 8px;
+   
+    
+}
+
+.user{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    
+}
+
+.user label{
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.user input{
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid black;
+    box-shadow: inset 0 0 3px black;
+    box-shadow: 0 0 3px black;
+    background: rgba(0, 0, 0, 0.4);
+    caret-color: rgb(242, 203, 114);
+    color: rgb(242, 203, 114);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.user input::placeholder{
+    color: rgba(242, 203, 114, 0.6);
+    font-weight: 300;
+    font-size: 15px;
+
+}
+
+.password{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.password label{
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.password input{
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid black;
+    box-shadow: inset 0 0 3px black;
+    box-shadow: 0 0 3px black;
+    background: rgba(0, 0, 0, 0.4);
+    caret-color: rgb(242, 203, 114);
+    color: rgb(242, 203, 114);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.password input::placeholder{
+    color: rgba(242, 203, 114, 0.6);
+    font-weight: 300;
+    font-size: 15px;
+
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 25px;
+
+
+}
+
+.btns button{
+    padding: 15px;
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: inset 0 0 3px black;
+    box-shadow: 0 0 1px black;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transform: 0.3s;
+    
+    
+}
+
+.btns button:hover{
+    scale: 1.1;
+}
+
+.btns button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top right, transparent, rgba(242, 203, 114, 0.8));
+    background-size: cover;
+    transition: left 0.7s;
+    z-index: -1;
+  }
+
+  .btns button:hover::before {
+    left: 0;
+  }
+
+
+
+.login span{
+    color: aqua;
+    font-weight: 600;
+}
+
+.register span{
+    color: aqua;
+    font-weight: 600;
+}
+
+
+
+
+
+  
+    
+
+
